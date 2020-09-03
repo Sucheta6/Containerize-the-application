@@ -1,0 +1,90 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Student Survey Form</title>
+	 <link rel="stylesheet" type="text/css" href="Survey.css"> 
+</head>
+<!-- HTML Body -->	
+<body bgcolor="#ded1d3";>
+ 
+<div class="bordered"></div>
+   
+<H1 > Student Survey Form </H1><br> <br>
+      <form >
+      <!-- Name of the student -->
+	     <H3 style="color:#9c3f06;"><u>Name</u></H3>
+         First name: <input id="firstName" type = "text" name = "first_name"  align="right" width="55" height="48"/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp; 
+         Last name: <input id="lastName" type = "text" name = "last_name"align="right" width="55" height="48" />
+		 <br> <br> <br> <br>
+		 
+		 <!-- Address -->
+		 <H3 style="color:#9c3f06;"><u>Address</u> </H3>
+		 street address: &nbsp;&emsp; <input type = "text-area" name = "street address" size= "50" align="right" width="55" height="48" />
+		 <br><br>
+		 city: &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type = "text" id="city" name = "city"  align="rightwards" size="50" /><br><br>
+		 state: &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type = "text" id=state" name = "state" />
+		 <br> <br>
+		 zip: &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type = "text-box" id="zip" name = "zip" />
+		 <br> <br> <br>
+		 
+		 <!-- Contact -->
+		 <H3 style="color:#9c3f06;"><u>Contact Information</u></H3>
+		 telephone number: &nbsp;&emsp;&emsp;&emsp;<input type = "box" id="Tele" name = "telephone number" />
+		 <br><br>
+		  e-mail: &nbsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type = "email" id="email" name = " e-mail"  size= "50"/>
+		 <br><br>
+		 date of survey: &emsp;&emsp;&emsp;&emsp;&emsp;<input type = "date" id="date" name = "date of survey" align="right" width="" height="48" />
+		 <br><br><br>
+		 
+<!-- University survey -->
+  <H3 style="color:#9c3f06;"><u>How did you get to know about the university?</u></H3>
+  <input type="radio" name="name" value="Friends">Friends
+  <input type="radio" name="name" value="Television">Television
+  <input type="radio" name="name" value="Internet">Internet
+  <input type="radio" name="name" value="Other">Other
+  <br><br><br>
+   
+  <H3 style="color:#9c3f06;"><u>Most liked about campus</u></H3>
+		 
+  <input type="checkbox" name="name" value="Location"> Location<br><br>
+  <input type="checkbox" name="name" value="Campus"> Campus<br><br>
+  <input type="checkbox" name="name" value="Sports" > Sports<br><br>
+  <input type="checkbox" name="name" value="Dorm Rooms"> Dorm Rooms<br><br>
+  <input type="checkbox" name="name" value="Atmosphere" > Atmosphere<br><br>
+  <input type="checkbox" name="name" value="Students"> Students<br><br><br>
+   
+	
+<H3 style="color:#9c3f06;"> <u>Likelihood of recommending this school</u>  </H3>	 
+	
+	
+<select>
+<option value="Likely">Likely</option>
+<option value="Very Likely">Very Likely</option>
+<option value="Unlikely">Unlikely</option>
+</select>
+<br><br><br>
+
+	 <!-- Raffle -->
+	 <H3 style="color:#9c3f06;"><u>Raffel</u></H3>
+	 <input type="text"  name="raffle" minlength="10"><br>
+	 <br><br>
+<!-- Additional Comments -->
+	 <H3 style="color:#9c3f06"><u> Comments</u></H3>
+	 <textarea rows="4" cols="50" name="comment" form="finalForm">Post your comments here !!</textarea>
+	<br><br><br><br>
+		 
+		 
+		 <button type="submit" value="Submit">Submit</button>
+        <button type="Cancel" value="Cancel">Cancel</button>
+		
+		
+      </form>
+   </body>
+	
+</html>

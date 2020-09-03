@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ruchieathacluster-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ruchieathacluster
+  template:
+    metadata:
+      labels:
+        app: ruchieathacluster
+    spec:
+      containers:
+      - name: ruchieathacluster
+        image: 23041997/maanvi:v3
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ruchieathacluster-service
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: ruchieathacluster
+  type: LoadBalancer
